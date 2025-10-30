@@ -46,6 +46,93 @@ See `docs/THERMAL_OVERVIEW.md` for a detailed summary of algorithms, KPIs, and d
 - [Integration Guide](docs/INTEGRATION_GUIDE.md) - SoundSafe and Extropic hardware integration
 - [SoundSafe Mapping](docs/SOUNDSAFE_MAPPING.md) - Algorithm-to-capability mappings
 
+## Extropic Demo (one‑command run)
+## Extropic Demo (one‑command run)
+
+Reproduce the complete Extropic demo (10 algorithms, discovery, benchmarks, thermodynamic generation) and generate reports:
+
+```bash
+python examples/extropic_full_demo.py --all --seed 42
+
+# Outputs under results/extropic_demo/
+#  - DEMO_REPORT.md (summary)
+#  - benchmark_comparison/comprehensive_report.html (interactive visuals)
+#  - generation/ (thermodynamic generation demo)
+```
+
+Automated test suite:
+
+```bash
+./run_extropic_tests.sh
+```
+
+Git LFS large assets (videos, numpy, zips) are tracked in `.gitattributes`. If you see LFS push errors, enable LFS on your org/repo and run:
+
+```bash
+git lfs install && git lfs push origin main
+```
+
+## Visual overview (what you’ll see)
+
+- Prototypes: Annotated before/after figures per algorithm with SoundSafe labels (SRSL, LABI, TCF, TAPS, etc.).
+- Discovery: Heatmaps/curves for SRSL (MI vs β×SNR), LABI (skip‑rate vs threshold×scale), TCF (edges vs perturbation).
+- Benchmarks: Energy (J/token), throughput (tokens/sec), intelligence per watt comparisons (GPU vs Thermal vs Extropic).
+- Generation: Thermodynamic generation demo (no GANs/FLOPs) for audio/video patterns.
+
+To generate visuals locally:
+
+```bash
+# Prototypes
+python examples/run_prototypes.py --seed 42 --results results/visuals
+
+# Discovery
+python examples/run_discovery.py --seed 42 --results results/visuals/discovery
+
+# Benchmarks + HTML
+python examples/benchmark_comparison.py --tokens 20000 --output results/visuals/benchmark
+python examples/generate_comprehensive_report.py --results results/visuals/benchmark/comparison_table.json --output results/visuals/benchmark
+```
+
+Key outputs:
+- `results/visuals/prototypes_*/*.png`
+- `results/visuals/discovery/*/*.png`
+- `results/visuals/benchmark/comprehensive_report.html`
+
+## Core equations (reference)
+
+Gibbs distribution and EBMs:
+
+```
+p(x) = (1/Z(β)) · exp(−β·E(x)),   β = 1/T
+E(s) = −Σ_i b_i s_i − Σ_(i,j) w_ij s_i s_j,  s_i ∈ {−1,+1}
+```
+
+Mutual information (SRSL objective):
+
+```
+I(X;Y) = Σ_{x,y} p(x,y) log ( p(x,y) / (p(x)p(y)) )
+```
+
+Landauer energy (LABI gating criterion):
+
+```
+E_Landauer = k_B T ln 2 · ΔH,   ΔH = H(prior) − H(posterior)
+```
+
+Thermal scheduling (TAPS) energy budget:
+
+```
+E_sense = Σ_{i,l} A_{i,l} · C_{i,l}    (subject to coverage/latency constraints)
+```
+
+Causal fusion (TCF) stability under interventions:
+
+```
+|| ∂E[X_j]/∂X_i || ≈ const  over  δ ∈ [δ_min, δ_max]
+```
+
+LaTeX report (optional): `results/visuals/latex/THERMAL_REPORT.tex` (embeds figures + equations).
+
 ## Installation
 
 Requires Python 3.10+.
