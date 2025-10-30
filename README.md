@@ -12,6 +12,40 @@ Features include:
 
 From a technical point of view, the internal structure compiles factor-based interactions to a compact "global" state representation, minimising Python loops and maximising array-level parallelism in JAX.
 
+## Thermal algorithms, discovery, and integrations (what we added)
+
+This extension adds thermodynamic algorithms, discovery tooling, and integrations built on top of THRML’s blocked Gibbs and discrete EBM infrastructure:
+
+- 10 thermal algorithms with KPI tracking under `thrml/algorithms/`:
+  SRSL, TAPS, BPP, EFSM, TBRO, LABI, TCF, PPTS, TVS, REF.
+- Core demos illustrating two‑color blocked Gibbs and a heterogeneous spin+categorical discrete EBM compiled to a compact global state.
+- Prototype runner with annotated plots (`examples/run_prototypes.py`) – figures saved to `results/`.
+- Discovery sweeps for temperature/noise/interventions (`examples/run_discovery.py`) – CSV/JSON + plots in `results/discovery/`.
+- Optional CoA/ROE integration demo (`examples/run_coa_integration.py`) with a lightweight adapter and scenario matcher under `thrml/coa_roe/`.
+
+Quickstart for the add‑ons:
+
+```bash
+# Prototypes (reduced sampling, annotated plots → results/prototypes_*)
+python examples/run_prototypes.py --seed 42
+
+# Thermodynamic discovery sweeps (CSV/JSON + plots → results/discovery)
+python examples/run_discovery.py --seed 42
+
+# CoA/ROE integration demo (adapts THRML KPIs into threat_event + context)
+python examples/run_coa_integration.py --seed 42
+```
+
+See `docs/THERMAL_OVERVIEW.md` for a detailed summary of algorithms, KPIs, and discovery methodology.
+
+**Complete Documentation**:
+- [Documentation Index](docs/DOCUMENTATION_INDEX.md) - Complete documentation index
+- [Quick Reference](docs/QUICK_REFERENCE.md) - Fast lookup for common tasks
+- [Thermal Algorithms Guide](docs/THERMAL_ALGORITHMS_GUIDE.md) - Detailed API and usage for all 10 algorithms
+- [Testing Guide](docs/TESTING_GUIDE.md) - Test suite documentation and best practices
+- [Integration Guide](docs/INTEGRATION_GUIDE.md) - SoundSafe and Extropic hardware integration
+- [SoundSafe Mapping](docs/SOUNDSAFE_MAPPING.md) - Algorithm-to-capability mappings
+
 ## Installation
 
 Requires Python 3.10+.

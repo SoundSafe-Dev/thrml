@@ -1,11 +1,13 @@
 import itertools
 import random
+import sys
 import time
 import unittest
 
 import jax
 import networkx as nx
 import numpy as np
+import pytest
 from jax import numpy as jnp
 
 from thrml.block_management import Block
@@ -930,6 +932,10 @@ class TestBigGrid(unittest.TestCase):
     of degrees of freedom.
     """
 
+    @pytest.mark.xfail(
+        condition=sys.platform == "darwin",
+        reason="Performance scaling test is sensitive to macOS CPU-only JAX timing variations"
+    )
     def test_big(self):
         side_lens = [50, 100, 200, 400, 500]
         times = []
