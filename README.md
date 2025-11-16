@@ -37,6 +37,9 @@ python examples/run_coa_integration.py --seed 42
 
 # SoundSafe thermodynamic probability visualization (Extropic chip accuracy + power savings + UTE/COA-ROE caseboard)
 python examples/run_soundsafe_visual_sim.py --seed 7 --zones 9 --steps 48
+
+# Interactive Gradio UI with live visuals for SRSL + BPP (auto-runs with defaults)
+python examples/gradio_demo.py
 ```
 
 See `docs/THERMAL_OVERVIEW.md` for a detailed summary of algorithms, KPIs, and discovery methodology.
