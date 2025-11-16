@@ -34,6 +34,9 @@ python examples/run_discovery.py --seed 42
 
 # CoA/ROE integration demo (adapts THRML KPIs into threat_event + context)
 python examples/run_coa_integration.py --seed 42
+
+# SoundSafe thermodynamic probability visualization (Extropic chip accuracy + power savings + UTE/COA-ROE caseboard)
+python examples/run_soundsafe_visual_sim.py --seed 7 --zones 9 --steps 48
 ```
 
 See `docs/THERMAL_OVERVIEW.md` for a detailed summary of algorithms, KPIs, and discovery methodology.
@@ -52,6 +55,14 @@ Requires Python 3.10+.
 
 ```bash
 pip install thrml
+```
+
+To run the complete SoundSafe simulation, Unified Threat Engine case-matching,
+and the full pytest suite without missing dependency errors, install the
+development extras (adds JAX, matplotlib, networkx, optax, etc.):
+
+```bash
+pip install -e ".[development,testing,examples]"
 ```
 
 ## Documentation
