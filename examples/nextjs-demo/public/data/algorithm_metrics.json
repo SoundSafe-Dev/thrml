@@ -1,0 +1,686 @@
+{
+  "generated_at": "2025-11-15T20:06:41.055566+00:00",
+  "bench_config": {
+    "steps": 1,
+    "warmup": 2,
+    "samples": 4,
+    "steps_per_sample": 1,
+    "seed": 7
+  },
+  "algorithms": [
+    {
+      "id": "srsl",
+      "name": "Stochastic-Resonance Signal Lifter",
+      "summary": "Amplifies sub-threshold signals using engineered thermal noise sweeps.",
+      "kpis": {
+        "mutual_information": 0.6238247752189636,
+        "optimal_beta": 1.0,
+        "signal_gain": 0.7326653003692627,
+        "energy_per_event_joules": 1.28e-10,
+        "mean_mutual_information": 0.6238247752189636,
+        "mean_signal_gain": 0.7326653003692627
+      },
+      "points": [
+        {
+          "x": -3.2,
+          "y": 3.0,
+          "z": 0.0,
+          "label": "srsl",
+          "metrics": {
+            "index": 0,
+            "value": 3.0
+          }
+        },
+        {
+          "x": -3.0,
+          "y": 3.0,
+          "z": 0.24539604783058167,
+          "label": "srsl",
+          "metrics": {
+            "index": 1,
+            "value": 3.0
+          }
+        },
+        {
+          "x": -2.8000000000000003,
+          "y": 3.0,
+          "z": 0.4637773633003235,
+          "label": "srsl",
+          "metrics": {
+            "index": 2,
+            "value": 3.0
+          }
+        },
+        {
+          "x": -2.6,
+          "y": 3.0,
+          "z": 0.6311032176017761,
+          "label": "srsl",
+          "metrics": {
+            "index": 3,
+            "value": 3.0
+          }
+        },
+        {
+          "x": -2.4000000000000004,
+          "y": 1.5,
+          "z": 0.7289534211158752,
+          "label": "srsl",
+          "metrics": {
+            "index": 4,
+            "value": 1.5
+          }
+        },
+        {
+          "x": -2.2,
+          "y": 0.0,
+          "z": 0.7465559244155884,
+          "label": "srsl",
+          "metrics": {
+            "index": 5,
+            "value": 0.0
+          }
+        },
+        {
+          "x": -2.0,
+          "y": -1.5,
+          "z": 0.6819730401039124,
+          "label": "srsl",
+          "metrics": {
+            "index": 6,
+            "value": -1.5
+          }
+        },
+        {
+          "x": -1.8,
+          "y": -1.5,
+          "z": 0.5423144698143005,
+          "label": "srsl",
+          "metrics": {
+            "index": 7,
+            "value": -1.5
+          }
+        },
+        {
+          "x": -1.6,
+          "y": 1.5,
+          "z": 0.3429544270038605,
+          "label": "srsl",
+          "metrics": {
+            "index": 8,
+            "value": 1.5
+          }
+        },
+        {
+          "x": -1.4000000000000001,
+          "y": 1.5,
+          "z": 0.10583999752998352,
+          "label": "srsl",
+          "metrics": {
+            "index": 9,
+            "value": 1.5
+          }
+        },
+        {
+          "x": -1.2000000000000002,
+          "y": 1.5,
+          "z": -0.1429259181022644,
+          "label": "srsl",
+          "metrics": {
+            "index": 10,
+            "value": 1.5
+          }
+        },
+        {
+          "x": -1.0,
+          "y": 0.0,
+          "z": -0.37595781683921814,
+          "label": "srsl",
+          "metrics": {
+            "index": 11,
+            "value": 0.0
+          }
+        },
+        {
+          "x": -0.8,
+          "y": -1.5,
+          "z": -0.5676018595695496,
+          "label": "srsl",
+          "metrics": {
+            "index": 12,
+            "value": -1.5
+          }
+        },
+        {
+          "x": -0.6000000000000001,
+          "y": -1.5,
+          "z": -0.696760892868042,
+          "label": "srsl",
+          "metrics": {
+            "index": 13,
+            "value": -1.5
+          }
+        },
+        {
+          "x": -0.4,
+          "y": -1.5,
+          "z": -0.7492161989212036,
+          "label": "srsl",
+          "metrics": {
+            "index": 14,
+            "value": -1.5
+          }
+        },
+        {
+          "x": -0.2,
+          "y": -3.0,
+          "z": -0.7191932201385498,
+          "label": "srsl",
+          "metrics": {
+            "index": 15,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 0.0,
+          "y": -3.0,
+          "z": -0.6099969744682312,
+          "label": "srsl",
+          "metrics": {
+            "index": 16,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 0.2,
+          "y": -3.0,
+          "z": -0.4336487650871277,
+          "label": "srsl",
+          "metrics": {
+            "index": 17,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 0.4,
+          "y": -1.5,
+          "z": -0.20956161618232727,
+          "label": "srsl",
+          "metrics": {
+            "index": 18,
+            "value": -1.5
+          }
+        },
+        {
+          "x": 0.6000000000000001,
+          "y": 1.5,
+          "z": 0.03759537637233734,
+          "label": "srsl",
+          "metrics": {
+            "index": 19,
+            "value": 1.5
+          }
+        },
+        {
+          "x": 0.8,
+          "y": 3.0,
+          "z": 0.2806133031845093,
+          "label": "srsl",
+          "metrics": {
+            "index": 20,
+            "value": 3.0
+          }
+        },
+        {
+          "x": 1.0,
+          "y": 3.0,
+          "z": 0.4927399456501007,
+          "label": "srsl",
+          "metrics": {
+            "index": 21,
+            "value": 3.0
+          }
+        },
+        {
+          "x": 1.2000000000000002,
+          "y": 3.0,
+          "z": 0.6506227254867554,
+          "label": "srsl",
+          "metrics": {
+            "index": 22,
+            "value": 3.0
+          }
+        },
+        {
+          "x": 1.4000000000000001,
+          "y": 3.0,
+          "z": 0.7368808388710022,
+          "label": "srsl",
+          "metrics": {
+            "index": 23,
+            "value": 3.0
+          }
+        },
+        {
+          "x": 1.6,
+          "y": 1.5,
+          "z": 0.7420186996459961,
+          "label": "srsl",
+          "metrics": {
+            "index": 24,
+            "value": 1.5
+          }
+        },
+        {
+          "x": 1.8,
+          "y": 1.5,
+          "z": 0.6654706597328186,
+          "label": "srsl",
+          "metrics": {
+            "index": 25,
+            "value": 1.5
+          }
+        },
+        {
+          "x": 2.0,
+          "y": 0.0,
+          "z": 0.515663206577301,
+          "label": "srsl",
+          "metrics": {
+            "index": 26,
+            "value": 0.0
+          }
+        },
+        {
+          "x": 2.2,
+          "y": -3.0,
+          "z": 0.30908888578414917,
+          "label": "srsl",
+          "metrics": {
+            "index": 27,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 2.4000000000000004,
+          "y": -3.0,
+          "z": 0.06848816573619843,
+          "label": "srsl",
+          "metrics": {
+            "index": 28,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 2.6,
+          "y": -3.0,
+          "z": -0.17965281009674072,
+          "label": "srsl",
+          "metrics": {
+            "index": 29,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 2.8000000000000003,
+          "y": -3.0,
+          "z": -0.4080158472061157,
+          "label": "srsl",
+          "metrics": {
+            "index": 30,
+            "value": -3.0
+          }
+        },
+        {
+          "x": 3.0,
+          "y": -3.0,
+          "z": -0.5914620161056519,
+          "label": "srsl",
+          "metrics": {
+            "index": 31,
+            "value": -3.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "taps",
+      "name": "Thermodynamic Active Perception Scheduling",
+      "summary": "Landauer-aware sensor scheduling that balances threat coverage with joule budgets.",
+      "kpis": {
+        "total_energy_joules_per_sec": 5.684256553649902,
+        "threat_coverage": 3.336883068084717,
+        "landauer_cost_joules": 2.347696421288474e-20,
+        "active_sensors": 15,
+        "mean_energy_joules_per_sec": 5.684256553649902,
+        "mean_threat_coverage": 3.336883068084717
+      },
+      "points": [
+        {
+          "x": -4.0,
+          "y": 0.0,
+          "z": 0.50121009349823,
+          "label": "sensor_0_level_0",
+          "metrics": {
+            "sensor": 0,
+            "level": 0,
+            "probability": 0.1253025233745575
+          }
+        },
+        {
+          "x": -4.0,
+          "y": 0.85,
+          "z": 1.7493950128555298,
+          "label": "sensor_0_level_1",
+          "metrics": {
+            "sensor": 0,
+            "level": 1,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -4.0,
+          "y": 1.7,
+          "z": 1.7493950128555298,
+          "label": "sensor_0_level_2",
+          "metrics": {
+            "sensor": 0,
+            "level": 2,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -3.0,
+          "y": 0.0,
+          "z": 1.3333333730697632,
+          "label": "sensor_1_level_0",
+          "metrics": {
+            "sensor": 1,
+            "level": 0,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": -3.0,
+          "y": 0.85,
+          "z": 1.3333333730697632,
+          "label": "sensor_1_level_1",
+          "metrics": {
+            "sensor": 1,
+            "level": 1,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": -3.0,
+          "y": 1.7,
+          "z": 1.3333333730697632,
+          "label": "sensor_1_level_2",
+          "metrics": {
+            "sensor": 1,
+            "level": 2,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": -2.0,
+          "y": 0.0,
+          "z": 1.7493950128555298,
+          "label": "sensor_2_level_0",
+          "metrics": {
+            "sensor": 2,
+            "level": 0,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -2.0,
+          "y": 0.85,
+          "z": 1.7493950128555298,
+          "label": "sensor_2_level_1",
+          "metrics": {
+            "sensor": 2,
+            "level": 1,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -2.0,
+          "y": 1.7,
+          "z": 0.50121009349823,
+          "label": "sensor_2_level_2",
+          "metrics": {
+            "sensor": 2,
+            "level": 2,
+            "probability": 0.1253025233745575
+          }
+        },
+        {
+          "x": -1.0,
+          "y": 0.0,
+          "z": 1.7493950128555298,
+          "label": "sensor_3_level_0",
+          "metrics": {
+            "sensor": 3,
+            "level": 0,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -1.0,
+          "y": 0.85,
+          "z": 1.7493950128555298,
+          "label": "sensor_3_level_1",
+          "metrics": {
+            "sensor": 3,
+            "level": 1,
+            "probability": 0.43734875321388245
+          }
+        },
+        {
+          "x": -1.0,
+          "y": 1.7,
+          "z": 0.50121009349823,
+          "label": "sensor_3_level_2",
+          "metrics": {
+            "sensor": 3,
+            "level": 2,
+            "probability": 0.1253025233745575
+          }
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.9211512804031372,
+          "label": "sensor_4_level_0",
+          "metrics": {
+            "sensor": 4,
+            "level": 0,
+            "probability": 0.4802878201007843
+          }
+        },
+        {
+          "x": 0.0,
+          "y": 0.85,
+          "z": 1.9211512804031372,
+          "label": "sensor_4_level_1",
+          "metrics": {
+            "sensor": 4,
+            "level": 1,
+            "probability": 0.4802878201007843
+          }
+        },
+        {
+          "x": 0.0,
+          "y": 1.7,
+          "z": 0.15769769251346588,
+          "label": "sensor_4_level_2",
+          "metrics": {
+            "sensor": 4,
+            "level": 2,
+            "probability": 0.03942442312836647
+          }
+        },
+        {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 1.3333333730697632,
+          "label": "sensor_5_level_0",
+          "metrics": {
+            "sensor": 5,
+            "level": 0,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 1.0,
+          "y": 0.85,
+          "z": 1.3333333730697632,
+          "label": "sensor_5_level_1",
+          "metrics": {
+            "sensor": 5,
+            "level": 1,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 1.0,
+          "y": 1.7,
+          "z": 1.3333333730697632,
+          "label": "sensor_5_level_2",
+          "metrics": {
+            "sensor": 5,
+            "level": 2,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 2.0,
+          "y": 0.0,
+          "z": 1.3333333730697632,
+          "label": "sensor_6_level_0",
+          "metrics": {
+            "sensor": 6,
+            "level": 0,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 2.0,
+          "y": 0.85,
+          "z": 1.3333333730697632,
+          "label": "sensor_6_level_1",
+          "metrics": {
+            "sensor": 6,
+            "level": 1,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 2.0,
+          "y": 1.7,
+          "z": 1.3333333730697632,
+          "label": "sensor_6_level_2",
+          "metrics": {
+            "sensor": 6,
+            "level": 2,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 3.0,
+          "y": 0.0,
+          "z": 1.3333333730697632,
+          "label": "sensor_7_level_0",
+          "metrics": {
+            "sensor": 7,
+            "level": 0,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 3.0,
+          "y": 0.85,
+          "z": 1.3333333730697632,
+          "label": "sensor_7_level_1",
+          "metrics": {
+            "sensor": 7,
+            "level": 1,
+            "probability": 0.3333333432674408
+          }
+        },
+        {
+          "x": 3.0,
+          "y": 1.7,
+          "z": 1.3333333730697632,
+          "label": "sensor_7_level_2",
+          "metrics": {
+            "sensor": 7,
+            "level": 2,
+            "probability": 0.3333333432674408
+          }
+        }
+      ]
+    },
+    {
+      "id": "bpp",
+      "name": "Boltzmann Policy Planner",
+      "summary": "Thermal policy sampler that fuses detection signals into calibrated escalations.",
+      "kpis": {
+        "time_to_escalation": 0.3709891140460968,
+        "intervention_precision": 0.0,
+        "intervention_recall": 0.0,
+        "selected_action": "notify",
+        "action_confidence": 0.3709891140460968,
+        "mean_time_to_escalation": 0.3709891140460968,
+        "mean_intervention_precision": 0.0
+      },
+      "points": [
+        {
+          "x": 3.1274728775024414,
+          "y": 1.2984618991613388,
+          "z": 0.0,
+          "label": "action_0",
+          "metrics": {
+            "action_index": 0,
+            "probability": 0.3709891140460968,
+            "threat_level": 0
+          }
+        },
+        {
+          "x": -1.0521100080040924e-07,
+          "y": 0.28972602263092995,
+          "z": 2.406947135925293,
+          "label": "action_1",
+          "metrics": {
+            "action_index": 1,
+            "probability": 0.08277886360883713,
+            "threat_level": 0
+          }
+        },
+        {
+          "x": -2.6381070613861084,
+          "y": 0.6133499965071678,
+          "z": -2.306306470245545e-07,
+          "label": "action_2",
+          "metrics": {
+            "action_index": 2,
+            "probability": 0.1752428561449051,
+            "threat_level": 0
+          }
+        },
+        {
+          "x": 3.7294739740900695e-08,
+          "y": 1.2984618991613388,
+          "z": -3.1274728775024414,
+          "label": "action_3",
+          "metrics": {
+            "action_index": 3,
+            "probability": 0.3709891140460968,
+            "threat_level": 0
+          }
+        }
+      ]
+    }
+  ]
+}
